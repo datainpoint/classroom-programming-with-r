@@ -4,7 +4,7 @@
 
 - 機構：台大資訊系統訓練班
 - 講師：郭耀仁 <yaojenkuo@datainpoint.com> 
-- 關於講師：<https://www.datainpoint.com/>
+- 關於講師：<https://www.datainpoint.com>
 
 ## 投影片
 
