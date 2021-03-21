@@ -14,7 +14,7 @@
 - [條件判斷](04-conditional-statement-in-r/lecture.slides.html)
 - [資料結構](05-structuring-data-with-r/lecture.slides.html)
 - [迭代資料](06-iterating-data-with-r/lecture.slides.html)
-- [函數](07-being-functional-with-r/lecture.slides.html)
+- [函數型程式設計](07-being-functional-with-r/lecture.slides.html)
 - [載入資料](08-importing-data-with-r/lecture.slides.html)
 
 如何將投影片轉換為 PDF 格式並下載？
