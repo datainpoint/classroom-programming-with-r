@@ -14411,7 +14411,7 @@ div.jp-OutputPrompt {
 <tbody>
 <tr>
 <td style="text-align:center">一維</td>
-<td style="text-align:left"><code>vector</code></td>
+<td style="text-align:left"><code>vector</code>, <code>factor</code></td>
 <td style="text-align:left"><code>list</code></td>
 </tr>
 <tr>
@@ -15702,7 +15702,7 @@ TRUE
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-r"><pre><span></span><span class="c1">#?str</span>
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#?strd</span>
 <span class="nf">str</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">)</span>
 </pre></div>
 
@@ -16099,6 +16099,264 @@ TRUE
 </tbody>
 </table>
 
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="matrix-&#33287;-array"><code>matrix</code> &#33287; <code>array</code><a class="anchor-link" href="#matrix-&#33287;-array">&#182;</a></h1>
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="&#20351;&#29992;-matrix()-&#20989;&#25976;&#21109;&#24314;&#30697;&#38499;">&#20351;&#29992; <code>matrix()</code> &#20989;&#25976;&#21109;&#24314;&#30697;&#38499;<a class="anchor-link" href="#&#20351;&#29992;-matrix()-&#20989;&#25976;&#21109;&#24314;&#30697;&#38499;">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-r"><pre><span></span><span class="n">my_mat</span> <span class="o">&lt;-</span> <span class="nf">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">,</span> <span class="n">nrow</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">my_mat</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'matrix'</li><li>'array'</li></ol>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="&#20351;&#29992;-[m,-n]-&#20841;&#20491;&#32034;&#24341;&#20540;&#20358;&#25645;&#37197;&#36984;&#25799;">&#20351;&#29992; <code>[m, n]</code> &#20841;&#20491;&#32034;&#24341;&#20540;&#20358;&#25645;&#37197;&#36984;&#25799;<a class="anchor-link" href="#&#20351;&#29992;-[m,-n]-&#20841;&#20491;&#32034;&#24341;&#20540;&#20358;&#25645;&#37197;&#36984;&#25799;">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-r"><pre><span></span><span class="n">my_mat</span><span class="p">[</span><span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">]</span> <span class="c1"># 選出位於（2, 3）這個位置的 6</span>
+<span class="n">my_mat</span><span class="p">[</span><span class="m">2</span><span class="p">,</span> <span class="p">]</span>  <span class="c1"># 選出所有第二列（2nd row）的元素</span>
+<span class="n">my_mat</span><span class="p">[,</span> <span class="m">3</span><span class="p">]</span>  <span class="c1"># 選出所有第三欄（3rd column）的元素</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+6
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>2</li><li>4</li><li>6</li></ol>
+
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>5</li><li>6</li></ol>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="&#20351;&#29992;-array()-&#20989;&#25976;&#21109;&#24314;&#38499;&#21015;">&#20351;&#29992; <code>array()</code> &#20989;&#25976;&#21109;&#24314;&#38499;&#21015;<a class="anchor-link" href="#&#20351;&#29992;-array()-&#20989;&#25976;&#21109;&#24314;&#38499;&#21015;">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-r"><pre><span></span><span class="n">my_arr</span> <span class="o">&lt;-</span> <span class="nf">array</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">24</span><span class="p">,</span> <span class="n">dim</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">))</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">my_arr</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+'array'
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="&#20351;&#29992;&#19977;&#20491;&#32034;&#24341;&#20540;&#20358;&#25645;&#37197;&#36984;&#25799;">&#20351;&#29992;&#19977;&#20491;&#32034;&#24341;&#20540;&#20358;&#25645;&#37197;&#36984;&#25799;<a class="anchor-link" href="#&#20351;&#29992;&#19977;&#20491;&#32034;&#24341;&#20540;&#20358;&#25645;&#37197;&#36984;&#25799;">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-r"><pre><span></span><span class="n">my_arr</span><span class="p">[,</span> <span class="p">,</span> <span class="m">1</span><span class="p">]</span> <span class="c1"># 第一個矩陣</span>
+<span class="n">my_arr</span><span class="p">[</span><span class="m">2</span><span class="p">,</span> <span class="p">,</span> <span class="m">1</span><span class="p">]</span> <span class="c1"># 第一個矩陣的第二列</span>
+<span class="n">my_arr</span><span class="p">[</span><span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">1</span><span class="p">]</span> <span class="c1"># 第一個矩陣的第二列第三欄</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<table>
+<caption>A matrix: 2 × 3 of type int</caption>
+<tbody>
+	<tr><td>1</td><td>3</td><td>5</td></tr>
+	<tr><td>2</td><td>4</td><td>6</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>2</li><li>4</li><li>6</li></ol>
+
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+6
 </div>
 
 </div>
